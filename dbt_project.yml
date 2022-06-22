@@ -16,7 +16,13 @@ model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
 seed-paths: ["seeds"]
-macro-paths: ["macros"]
+#macro-paths: ["macros"]
+macro-paths:
+  - macros/DDO/macros/materializations
+  - macros/DDO/macros/env
+  - macros/DDO/macros/structure
+  - macros/DDO/macros/namespacing
+  
 snapshot-paths: ["snapshots"]
 
 target-path: "target"  # directory which will store compiled SQL files
@@ -35,4 +41,4 @@ models:
   my_new_project:
     # Applies to all files under models/example/
     example:
-      materialized: view
+      materialized: plain
