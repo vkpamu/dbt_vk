@@ -18,10 +18,10 @@ test-paths: ["tests"]
 seed-paths: ["seeds"]
 #macro-paths: ["macros"]
 macro-paths:
-  - dbt_modules/DDO/macros/materializations
-  - dbt_modules/DDO/macros/env
-  - dbt_modules/DDO/macros/structure
-  - dbt_modules/DDO/macros/namespacing
+  - macros/DDO/macros/materializations
+  - macros/DDO/macros/env
+  - macros/DDO/macros/structure
+  - macros/DDO/macros/namespacing
   
 snapshot-paths: ["snapshots"]
 
